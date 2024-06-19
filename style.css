@@ -1,0 +1,103 @@
+*{
+    padding: 0 ;
+    margin: 0 ;
+}
+:root{
+    --primary-color :#52d93d ;
+    --secondary-color: white ;
+}
+.p-ticket {
+    font-size: 36px;
+    font-weight: 800;
+}
+.btn img {
+    height: 20px ;
+    width: 20px ;
+   
+}
+.navbar-end a {
+    color:var(--primary-color);
+}
+.last-btn {
+    border: 1px solid var(--primary-color);
+}
+.group-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+}
+.main-container {
+    background-image: url('images/banner.png');
+    background-repeat: no-repeat ;
+    background-size: cover ;
+    height: 550px ;
+    width: 1171px;
+    background-position: center ;
+    border-radius: 20px;
+   position: relative;
+}
+.text-container{
+   
+    text-align: center;
+    align-items: center;
+    margin-top: 70px ;
+}
+.text-container h1{
+    color: var(--secondary-color);
+    font-weight: 800;
+    font-size: 64px;
+}
+.text-container h2{
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 64px;
+}
+.text-container p{
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: 400;
+}
+.text-container .btn {
+    background: var(--primary-color);
+    outline: none ;
+    border: none ;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px ;
+}
+.box {
+    width: 308px;
+    height: 138px;
+    background-color:var(--secondary-color);
+    display: flex ;
+    justify-content: center ;
+    align-items: center;
+    border-radius: 24px ;
+    border-block-end-width: 10px;
+    border-block-end-style: solid;
+    border-block-end-color: var(--primary-color);
+}
+.box-text{
+    margin-left: 10px ;
+}
+.logo img {
+    border: 1px dashed black ;
+}
+.box-container {
+         position: absolute;
+         display: flex ;
+         gap: 23px ;
+         padding: 90px ;
+}
+.container-1{
+    width: 573px;
+    height: 220px;
+    border-radius: 24px;
+    background: rgb(255, 191, 15);
+}
+.container-1 h1 {
+    font-size: 30px;
+font-weight: 500;
+
+}
