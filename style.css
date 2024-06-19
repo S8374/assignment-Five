@@ -35,7 +35,7 @@
     width: 1171px;
     background-position: center ;
     border-radius: 20px;
-   position: relative;
+  
 }
 .text-container{
    
@@ -85,7 +85,7 @@
     border: 1px dashed black ;
 }
 .box-container {
-         position: absolute;
+        
          display: flex ;
          gap: 23px ;
          padding: 90px ;
@@ -95,9 +95,52 @@
     height: 220px;
     border-radius: 24px;
     background: rgb(255, 191, 15);
+
+    border: none;
+}
+.coupon-divider{
+    width: 48px;
+    height: 290px;
+    
+    
 }
 .container-1 h1 {
     font-size: 30px;
 font-weight: 500;
 
+}
+.container-1 p {
+    font-weight: 600;
+}
+.container-1{
+    display: flex ;
+    justify-content: space-between;
+}
+.container-1 .coupen-text{
+     padding: 65px ;
+    
+}
+.offer{
+    text-align: center ;
+    margin-top: 140px;
+    color: rgb(3, 7, 18);
+font-family: Raleway;
+font-size: 40px;
+font-weight: 700;
+line-height: 47px;
+letter-spacing: 0px;
+text-align: center;
+}
+.coupon-container{
+    display: flex ;
+    gap: 30px ;
+    justify-content: center;
+    margin-top: 70px ;
+}
+.btns{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 100px ;
 }
