@@ -16,8 +16,7 @@ for (const kbd of allKeyBord) {
             if (kbd.classList.contains('click')) {
                 count++;
 
-  const inputFild =   document.getElementById('input-section') ;
-         inputFild.style.display = 'block';
+              
 
                 const findTotalSeat = document.getElementById('selected-seat').innerText;
                 document.getElementById('selected-seat').innerText = parseInt(findTotalSeat) - 1;
@@ -43,6 +42,7 @@ for (const kbd of allKeyBord) {
                 createdId.appendChild(p3);
 
                 findId.appendChild(createdId);
+                document.getElementById('input-section').style.display = 'block';
             } else {
                 const seatName = kbd.innerText;
                 const findId = document.getElementById('set-seatName');
@@ -57,8 +57,9 @@ for (const kbd of allKeyBord) {
                 count--;
                 document.getElementById('change-seatnumber').innerText = count;
 
-                const inputFild =   document.getElementById('input-section') ;
-                inputFild.style.display = 'none';
+                if (count === 0) {
+                    document.getElementById('input-section').style.display = 'none';
+                }
             }
 
 
@@ -150,6 +151,7 @@ function refreshSeatSection() {
     document.getElementById('change-seatnumber').innerText = count;
     document.getElementById('total-price').innerText = 0;
     document.getElementById('grand-total').innerText = 0;
+    document.getElementById('set-seatName').innerText = '';
     for (const kbd of allKeyBord) {
         kbd.classList.remove('click');
     }
