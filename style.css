@@ -237,3 +237,11 @@ padding-left: 70px ;
     outline: none;
 
 }
+
+.kbd.click{
+    background-color: #52d93d;
+}
+#set-seatName div{
+     display: flex;
+     justify-content: space-between;
+}
