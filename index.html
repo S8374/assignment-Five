@@ -90,7 +90,7 @@
                                     <img src="images/cupon-devider.png" alt="">
                                   </div>
                                   <div class="coupen-text">
-                                       <h1>NEW15 </h1>
+                                       <h1 id="new15-code">NEW15 </h1>
                                        <h3> Coupon Code </h3>
                                   </div>
                              </div>
@@ -104,7 +104,7 @@
                                     <img src="images/cupon-devider.png" alt="">
                                   </div>
                                   <div class="coupen-text" style="padding: 47px ;">
-                                       <h1> Couple 20 </h1>
+                                       <h1 id="couple-code"> Couple 20 </h1>
                                        <h3> Coupon Code </h3>
                                   </div>
                              </div>
@@ -264,34 +264,37 @@
                                    </div>
                                     <div class="seatPrice-clas" style="font-weight: bold;">
                                           <p >Total Price</p>
-                                          <p id="total-price">1100</p>
+                                          <p id="total-price">0</p>
                                     </div>
                                     <label class="input input-bordered flex items-center gap-2" style="margin: 20px 0;">
-                                        <input type="text" class="grow" placeholder=" Have any copupon? " />
+                                        <input id="apply-coupen" type="text" class="grow" placeholder=" Have any copupon? " />
                                         <button class="btn" id="praimar-btn">Apply</button>
                                       </label>
                                       <div class="seatPrice-clas" style="font-weight: bold;">
                                         <p >Grand Total</p>
-                                        <p>1100</p>
+                                        <p id="grand-total" >0</p>
                                   </div>
 
                             </nav>
-                            <div class="input-section" style="margin-top: 20px ; outline: none;">
-                                    <div class="an">
+                            <div id="input-section" style="margin-top: 20px ; outline: none; display: none;">
+                              <form onsubmit="handleSubmit(event)">
+                                    <div class="ss">
                                         <label class="input input-bordered flex items-center gap-2">
                                              Name :
-                                             <input type="text" class="grow" placeholder="Enter your name" />
+                                             <input type="text" class="grow" placeholder="Enter your name" id="name" />
                                            </label>
                                            <label class="input input-bordered flex items-center gap-2" style="margin: 20px 0;">
                                              Phone Number :
-                                             <input type="number" class="grow" placeholder="Enter your phone number" />
+                                             <input type="number" class="grow" placeholder="Enter your phone number" id="number"/>
                                            </label>
                                            <label class="input input-bordered flex items-center gap-2">
                                              Email :
-                                             <input type="text" class="grow" placeholder="Enter your email" />
+                                             <input type="text" class="grow" placeholder="Enter your email" required id="email"/>
                                            </label>
                                     </div>
-                                    <button class="btn" style="width: 100%; margin: 20px 0 ;" id="praimar-btn">Submit</button>
+                                  
+                                    <button class="btn" type="submit" style="width: 100%; margin: 20px 0 ;" id="praimar-btn">Submit</button>
+                              </form>     
                                     <div class="terms" style="display: flex; justify-content: center;gap: 20px ;">
                                         <a href="#" style="text-decoration: underline;">Terms and Conditions</a><a href="#"style="text-decoration: underline;">Cancellation Policy </a>
                                     </div>
@@ -327,6 +330,9 @@
         </footer>
         <script src="utiliteFunction.js"></script>
         <script src="index.js"></script>
-        <script></script>
+        <script>
+
+          
+        </script>
 </body>
 </html>
