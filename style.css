@@ -292,14 +292,16 @@ padding-left: 70px ;
 
 .container-1{
     width: 100% ;
+  padding: 25px ;
     
 }
 .coupon-divider{
     display: none ;
+ 
 }
 .container-1 h1 {
-    font-size: 10px ;
-font-weight: normal;
+    font-size: 20px ;
+font-weight: bold;
 
 }
 .container-1 p {
@@ -310,13 +312,17 @@ font-weight: normal;
     
 }
 .coupen-text{
-    padding: 40px ;
+    margin-top: -55px ;
+    margin-left: -20px ;
+  
+    
 }
 .green-line{
     display: block ;
 }
 .items1{
     width: 100% ;
+    margin-left: -50px  ;
 }
 .under{
     display: flex ;
@@ -366,11 +372,18 @@ margin-top: 30px ;
     justify-content: center;
     margin-top: 20px ;
 }
-label{
-    font-size: 0px;
-}
+
 .seat-section2{
     padding: 0px ;
   
+}
+.group-3{
+    margin-top: 10px ;
+}
+.offer h1{
+    color: rgb(39, 24, 109)  ;
+}
+#con{
+    margin-top: 20px ;
 }
 }
