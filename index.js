@@ -156,3 +156,22 @@ function refreshSeatSection() {
         kbd.classList.remove('click');
     }
 }
+
+//coupen code 
+
+
+document.getElementById('praimar-btn').addEventListener('click', function() {
+    const couponCode = document.getElementById('apply-coupen').value.trim();
+    const totalPriceElement = document.getElementById('total-price');
+    const grandTotalElement = document.getElementById('grand-total');
+
+    let totalPrice = parseFloat(totalPriceElement.innerText);
+    let discount = 0;
+
+    if (couponCode === 'NEW15' || couponCode === 'Couple20') {
+        discount = 0.15 * totalPrice;
+    }
+
+    const grandTotal = totalPrice - discount;
+    grandTotalElement.innerText = grandTotal.toFixed(2);
+});
